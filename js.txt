@@ -1,0 +1,48 @@
+js
+
+odd even
+vowels consonants
+
+
+even handler
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculate</title>
+</head>
+<body>
+    <input type="text" id="num1" value="4">
+    <input type="text" id="num2" value="7">
+    <button onclick="fun()">calculate</button>
+    <button onclick="fun2()">minus</button>
+    <p id="total"></p>
+    <script>
+        var num1=document.getElementById("num1")
+        var num2=document.getElementById("num2")
+        var final=document.getElementById("total")
+        var num3=Number(num1.value)
+        var num4=Number(num2.value)
+          var num5 =num3 + num4
+         
+        
+        
+        function fun()
+        {
+          
+        
+          final.textContent=num5
+        }
+        
+        function fun2()
+        {
+          var num3=Number(num1.value)
+        var num4=Number(num2.value)
+          var num5 =num3 - num4
+        
+          final.textContent=num5
+        }
+
+    </script>
+</body>
+</html>
